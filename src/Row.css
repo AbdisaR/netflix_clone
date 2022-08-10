@@ -1,0 +1,30 @@
+.row{
+display: flex;
+overflow-y: hidden;
+overflow-x: scroll;
+}
+.row::-webkit-scrollbar {
+    display: none;
+}
+.row__image{
+    object-fit: contain;
+    display: flex;
+    width: 100%;
+    max-height: 100px;
+    padding: 10px;
+    margin: 10px;
+    transition: transform 450ms;
+}
+.row__image:hover{
+    transform: scale(1.08);
+}
+
+.row__image__large{
+    max-height: 250px;
+    padding: 10px;
+    margin: 10px;
+    transition: transform 450ms;
+}
+.row__image__large:hover{
+    transform: scale(1.08);
+}
